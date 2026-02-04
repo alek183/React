@@ -18,11 +18,11 @@ const TestScreen = () => {
 
 const styles = StyleSheet.create ({
     textStyle: {
-        fontSize : 25,
+        fontSize : 30,
         color : "red",
     },
     textStyle2 : {
-        fontSize : 25,
+        fontSize : 30,
         color : "orange",
     },
 });
