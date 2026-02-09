@@ -5,6 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import MainScreen from './screens/MainScreen';
 import ExerciseScreen from './screens/ExerciseScreen';
 import TestScreen from './screens/TestScreen';
+import ListScreen from './screens/ListScreen';
 
 const Stack = createStackNavigator();
 
@@ -12,7 +13,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name = "Home" component = {TestScreen}/>
+        <Stack.Screen name = "Home" component = {ListScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
