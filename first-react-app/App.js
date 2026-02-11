@@ -7,6 +7,7 @@ import ExerciseScreen from './screens/ExerciseScreen';
 import TestScreen from './screens/TestScreen';
 import ListScreen from './screens/ListScreen';
 import ButtonScreen from './screens/ButtonScreen';
+import PersonalScreen from './screens/PersonalScreen';
 
 const Stack = createStackNavigator();
 
@@ -14,7 +15,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name = "Home" component = {ButtonScreen}/>
+        <Stack.Screen name = "Home" component = {PersonalScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
