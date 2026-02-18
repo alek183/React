@@ -2,13 +2,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import MainScreen from './screens/MainScreen';
-import ExerciseScreen from './screens/ExerciseScreen';
-import TestScreen from './screens/TestScreen';
-import ListScreen from './screens/ListScreen';
-import ButtonScreen from './screens/ButtonScreen';
-import PersonalScreen from './screens/PersonalScreen';
-import MenuScreen from './screens/MenuScreen';
+import MainScreen from './src/screens/MainScreen';
+import ExerciseScreen from './src/screens/ExerciseScreen';
+import TestScreen from './src/screens/TestScreen';
+import ListScreen from './src/screens/ListScreen';
+import ButtonScreen from './src/screens/ButtonScreen';
+import PersonalScreen from './src/screens/PersonalScreen';
+import MenuScreen from './src/screens/MenuScreen';
+import StudentsScreen from './src/screens/StudentsScreen';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ export default function App() {
         <Stack.Screen name = "List" component = {ListScreen}/>
         <Stack.Screen name = "Exercise" component = {ExerciseScreen}/>
         <Stack.Screen name = "Menu" component = {MenuScreen}/>
+        <Stack.Screen name = "Students" component = {StudentsScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
