@@ -10,6 +10,8 @@ import ButtonScreen from './src/screens/ButtonScreen';
 import PersonalScreen from './src/screens/PersonalScreen';
 import MenuScreen from './src/screens/MenuScreen';
 import StudentsScreen from './src/screens/StudentsScreen';
+import BoxScreen from './src/screens/BoxScreen';
+import PostScreen from './src/screens/PostScreen';
 
 const Stack = createStackNavigator();
 
@@ -23,6 +25,8 @@ export default function App() {
         <Stack.Screen name = "Exercise" component = {ExerciseScreen}/>
         <Stack.Screen name = "Menu" component = {MenuScreen}/>
         <Stack.Screen name = "Students" component = {StudentsScreen}/>
+        <Stack.Screen name = "Students" component = {BoxScreen}/>
+        <Stack.Screen name = "Posts" component = {PostScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
